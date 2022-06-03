@@ -29,9 +29,9 @@ def toUpper(text):
 
 def Analyze(request):
     Text = request.POST.get('text', 'default')
-    removepunc = request.GET.get('removepunc', 'off')
-    lowercase = request.GET.get('lowercase', 'off')
-    uppercase = request.GET.get('uppercase', 'off')
+    removepunc = request.POST.get('removepunc', 'off')
+    lowercase = request.POST.get('lowercase', 'off')
+    uppercase = request.POST.get('uppercase', 'off')
 
     if (removepunc == 'off' and lowercase == "off" and uppercase == "off") or ( removepunc == 'on' and lowercase == "on" and uppercase == "on"):
             return HttpResponse("Error")
