@@ -7,7 +7,7 @@ def index(request):
 
 
 def removePunc(text):
-    punctuations = '''!@#$%^&*():"",.?/][}{\|=+-_~`'''
+    punctuations = '''!@#$%^&<>《》☆☆¡¿◇♡♤●○•°÷×;€£₹₩*():"",.?/][}{\|=+-_~`'''
     analyzedText = ""
     for char in text:
         if char not in punctuations:
